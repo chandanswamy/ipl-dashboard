@@ -22,7 +22,6 @@ class Home extends Component {
       imageUrl: eachTeam.team_image_url,
     }))
 
-    console.log(updatedIplTeamsData)
     this.setState({iplTeams: updatedIplTeamsData, isLoading: false})
   }
 
