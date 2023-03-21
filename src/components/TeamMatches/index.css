@@ -42,5 +42,15 @@
 }
 
 .team-logo {
-  width: 80%;
+  width: 90%;
+}
+
+.recent-matches-container {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }

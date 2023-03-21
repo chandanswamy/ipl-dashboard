@@ -67,7 +67,7 @@ class TeamMatches extends Component {
     const {teamBannerUrl, latestMatchDetails} = matchesData
     return (
       <div className="ipl-team-details">
-        <img src={teamBannerUrl} alt="team logo" className="team-logo" />
+        <img src={teamBannerUrl} alt="team banner" className="team-logo" />
         <LatestMatch matchDetails={latestMatchDetails} />
         {this.renderIplTeamAllMatches()}
       </div>
@@ -79,13 +79,11 @@ class TeamMatches extends Component {
     const {recentMatches} = matchesData
 
     return (
-      <div>
-        <ul>
-          {recentMatches.map(eachMatch => (
-            <MatchCard key={eachMatch.id} matchDetails={eachMatch} />
-          ))}
-        </ul>
-      </div>
+      <ul className="recent-matches-container">
+        {recentMatches.map(eachMatch => (
+          <MatchCard key={eachMatch.id} matchDetails={eachMatch} />
+        ))}
+      </ul>
     )
   }
 

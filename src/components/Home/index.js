@@ -26,7 +26,7 @@ class Home extends Component {
   }
 
   renderLoader = () => (
-    <div className="loader-container">
+    <div testid="loader" className="loader-container">
       <Loader type="TailSpin" height={80} width={80} color="#475569" />
     </div>
   )
